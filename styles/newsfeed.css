@@ -1,0 +1,23 @@
+.newsfeed-post-container {
+  position: absolute;
+  width: 55%;
+  height: 558px;
+  left: 304px;
+  top: 496px;
+
+  background: #ffffff;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.newsfeed-post-container h1 {
+  font-style: normal;
+  justify-content: center;
+
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  padding-left: 1rem;
+  width: 50%;
+
+  color: black;
+}

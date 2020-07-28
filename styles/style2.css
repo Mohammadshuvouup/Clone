@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/Product\ Sans\ Regular.ttf");
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #062333;
+}
+
+#a {
+  text-decoration: none;
+  color: black;
+}
+
+.ul {
+  list-style: none;
+}
+
+a:hover,
+li:hover,
+button {
+  cursor: pointer;
+}
+
+.dp-flex {
+  display: flex;
+}
+
+.aln-center {
+  align-items: center;
+}
+
+.navPanelLeft {
+  width: 30%;
+  max-width: 16rem;
+  background-color: #062333;
+  height: 100vh;
+  /* max-height: 100%; */
+  color: whitesmoke;
+  padding: 34px 0;
+}
+
+.logoContainer {
+  width: 157px;
+  height: 29px;
+  /* border: 1px solid white; */
+  margin-left: 33px;
+  
+}
+
+.logoContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.menuContainer,
+.coursesContainer {
+  width: 100%;
+  max-height: 16.5rem;
+  /* padding: 0 0.5rem 0 0; */
+}
+
+.menuContainer{
+  margin-top: 5rem;
+}
+.header {
+  padding: 0 1.5rem;
+  font-size: 14px;
+  color: #9A9A9A;
+}
+
+.menuItems {
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+
+.menuItem,
+.courseDiv {
+
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  margin: 0 auto;
+  /* margin-bottom: 1.5rem;   */
+  
+  
+}
+
+.menuItem:hover,
+.courseDiv:hover {
+  background-color: rgba(241, 85, 126, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menuName,
+.courseName {
+  padding: 0 1rem;
+  font-size: 18px;
+line-height: 21px;
+color: rgba(255, 255, 255, 0.7);
+
+}
+
+.menuItem:hover .menuSvg svg path,
+.menuItem:hover .menuSvg svg {
+  fill: #72f584;
+  fill-opacity: 1;
+}
+
+.menuItem:hover .menuName {
+  color: #72f584;
+}
+
+.courseDiv:nth-child(even) .courseSvg svg path {
+  fill: #55d5f1;
+}
+
+.courseDiv:nth-child(odd) .courseSvg svg path {
+  fill: #f1e155;
+}
+
+.courseDiv:nth-child(even):hover .courseSvg svg path,
+.courseDiv:nth-child(odd):hover .courseSvg svg path {
+  fill: #72f584;
+}
+
+.courseDiv:nth-child(even):hover .courseName,
+.courseDiv:nth-child(odd):hover .courseName {
+  color: #72f584;
+}
+
+.mainSection {
+  width: 100%;
+  padding-bottom: 2rem;
+  background-color: #f4f4f7;
+}
+
+.navBar {
+  height: 4rem;
+  width: 100%;
+  box-shadow: 0 4px 6px #00000015;
+  background-color: white;
+}
+
+.searchBarContainer {
+  width: 70%;
+  height: 100%;
+}
+
+.searchIcon {
+  background-color: white;
+  padding-left: 1.5rem;
+}
+
+.searchBar {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 0.7rem;
+  font-size: 1.1rem;
+}
+
+.notificationBellContainer {
+  width: 4rem;
+  height: 100%;
+  justify-content: center;
+  border-left: 1px solid #00000015;
+  border-right: 1px solid #00000015;
+}
+
+.notificationBellContainer svg {
+  cursor: pointer;
+}
+
+.profileContainer {
+  height: 100%;
+  padding: 0 1rem 0 1.5rem;
+}
+
+.photoContainer,
+.profilePhoto {
+  height: 2.5rem;
+  border-radius: 10px;
+}
+
+.name span,
+.sth-else {
+  padding: 0 6px 0 12px;
+}
+
+.sth-else {
+  font-size: 0.7rem;
+}
+
+.arrowdown {
+  padding: 0 5px;
+}
+
+.classname-box{
+ width: 87%;
+ height: 85px;
+ background-color: white;
+ margin-top: 29px;
+ margin-left: 41px;
+ border-radius: 20px;
+ display: flex;
+ align-items: center;
+ box-shadow: 1px 4px 11px 5px rgba(192, 192, 192, 0.533)
+
+}
+
+.classname-icon-container{
+  width: 45px;
+  height: 45px;
+  margin-left: 22px;
+}
+
+.classname-icon-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.classname-text-container{
+  margin-left: 6px;
+}
+
+.classname-text-container h1{
+  font-family: "Product Sans";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #070829;
+}
+
+.classname-text-container p{
+ font-family: Helvetica, sans-serif;
+ font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+ color: #A0A8BE;
+}
+
+.content-container{
+  display: flex;
+  margin-top: 5%;
+  margin-left: 47px;
+}
+
+.left-side-container{
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  /* background-color: red; */
+  
+}
+
+.make-post-container{
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  display: flex;
+}
+
+.post-box textarea{
+  width: 100%;
+  height: auto;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #666666;
+}
+
+.post-box textarea::placeholder{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #666666;
+}
+
+.make-post-container .profile-image{
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+}
+
+.make-post-container .profile-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.make-post-container .post-box{
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+  margin-top: 11px;
+}
+
+.make-post-container .post-box .upload-btn{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background: #F1F1F1;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 140px;
+  height: 38px;
+  padding: 5px 10px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.make-post-container .post-box .upload-btn p{
+
+margin-left: 9.5px;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.5px;
+
+color: #000000;
+
+}
+
+.make-post-container .post-box .buttons-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.make-post-container .post-box .upload-btn .btn-icon{
+
+  width: 15px;
+  height: 15px;
+  margin-bottom: 5px;
+
+}
+
+.make-post-container .post-box .upload-btn .btn-icon img{
+
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.right-side-container{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+
+select {
+  cursor: pointer;
+  background-color: white;
+  padding: 0.5rem;
+  height: 2.5rem;
+  border-radius: 4px;
+}
+
+.filter2 {
+  margin-left: 1rem;
+  height: 2.5rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.filter2 svg {
+  cursor: pointer;
+}
+
+.filter2 .dashboardIconContainer {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.filter2 .dashboardIconContainer svg {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+.filter2 .listIcon {
+  padding-left: 0.5rem;
+}
+
+.BrowseCourses {
+  height: calc(100vh - 11rem);
+  padding: 1rem 1.5rem;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+
+.course {
+  position: relative;
+  height: 17rem;
+  width: 17rem;
+  flex-direction: column;
+  margin: 1.5rem 2rem;
+}
+
+.courseImageContainer {
+  width: 100%;
+}
+
+.courseImg {
+  width: 100%;
+  height: 12rem;
+  border-radius: 6px;
+}
+
+.courseDetails {
+  position: absolute;
+  width: 15rem;
+  top: 50%;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px 0 #00000035;
+}
+
+.courseDetails .ratings {
+  display: flex;
+  padding: 0.5rem 0 0;
+  justify-content: space-between;
+}
+
+.courseDetails .starRating {
+  display: flex;
+}
+
+.courseDetails .tokens .tokenImage {
+  margin-right: 5px;
+}
+
+.courseDetails .starRating .star {
+  padding: 2px;
+  cursor: pointer;
+}
+
+.courseDetails .tutor {
+  color: #00000077;
+  font-weight: 500;
+}

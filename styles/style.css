@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul {
+	list-style: none;
+}
+
+a:hover,
+li:hover,
+button {
+	cursor: pointer;
+}
+
+.pdDefault {
+	padding: 0 4rem;
+}
+
+.dpFlex {
+	display: flex;
+}
+
+.navTop {
+	padding-top: 2rem;
+	/* background-color: aquamarine; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logoContainer .logo {
+	height: 2rem;
+}
+
+.navLinksContainer ul {
+	display: flex;
+}
+
+.navLink {
+	padding: 0 1rem;
+	font-size: 0.8rem;
+	display: flex;
+	align-items: center;
+}
+
+.navLink img {
+	padding: 0 0 0 0.5rem;
+	height: 0.4rem;
+}
+
+.sectionA {
+	margin-top: 5rem;
+}
+
+.illustration1 {
+	width: 42rem;
+}
+
+.textLeft {
+	padding: 3rem 8rem 0 0;
+}
+
+h1.heading {
+	font-size: 2.8rem;
+	/* background-color: blue; */
+}
+
+.textsmall {
+	font-size: 0.9rem;
+	padding: 1.5rem 2rem 1.5rem 0;
+}
+
+.btn {
+	padding: 0.5rem 2.5rem;
+	border: 1px solid grey;
+	border-radius: 4px;
+	color: black;
+	background-color: transparent;
+}
+
+.btnPurple {
+	background-color: blueviolet;
+	border-color: blueviolet;
+	margin-right: 4rem;
+	color: white;
+}
+
+.sectionB {
+	width: 100%;
+	height: 100vh;
+	background: url("images/bg2.svg") no-repeat;
+	background-size: 65%;
+	background-position: center;
+	/* background-color: cadetblue; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg-1 {
+	background-color: #fffae6dd;
+}
+
+.bg-11 {
+	background-color: #fcf4d6;
+}
+
+.bg-2 {
+	background-color: #ff335f22;
+}
+
+.bg-21 {
+	background-color: #ff335f;
+}
+
+.bg-3 {
+	background-color: #25cad122;
+}
+
+.bg-31 {
+	background-color: #25cad1;
+}
+
+.tile {
+	width: 15rem;
+	/* height: 12rem; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 1rem;
+	margin: 0 2rem;
+	border-radius: 4px;
+}
+
+.tile .text {
+	width: 50%;
+	/* background-color: yellow; */
+	font-weight: 600;
+}
+
+.linkContainer {
+	height: 2rem;
+	width: 50%;
+	font-size: 0.6rem;
+	display: flex;
+	align-items: center;
+}
+
+.linkContainer img {
+	height: 0.8rem;
+	padding-left: 1rem;
+	cursor: pointer;
+}
+
+.icon {
+	padding: 1.5rem 0;
+}
+.icon svg {
+	height: 3rem;
+}
+
+.active {
+	padding: 2.5rem 0;
+}
+
+.headerDiv {
+	justify-content: space-between;
+}
+
+.headerDiv .headingText {
+	width: 17rem;
+	font-size: 2rem;
+	font-weight: 700;
+	/* background-color: yellowgreen; */
+}
+
+.navBtns {
+	width: 10rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.navBtns .prevContainer,
+.navBtns .nextContainer {
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	padding: 0.2rem;
+	margin: 0 0.5rem;
+}
+
+.navBtns .prev,
+.navBtns .next {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.coursesContainer {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	margin-top: 1rem;
+	padding: 2rem 0;
+	color: black;
+}
+
+.courseTile {
+	position: relative;
+	width: 19rem;
+	height: 25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 2rem;
+}
+
+.background {
+	height: 10.2rem;
+	width: 100%;
+}
+
+.svgContainer {
+	position: absolute;
+	top: 2.5rem;
+	right: 1rem;
+}
+
+.svgContainer img {
+	height: 12rem;
+}
+
+.courseTile:first-child .svgContainer img {
+	position: relative;
+	left: 3rem;
+}
+
+.courseTile:last-child .svgContainer img {
+	position: relative;
+	right: 2rem;
+}
+
+.tutorProfile {
+	position: absolute;
+	left: 1.5rem;
+	bottom: 8.5rem;
+}
+
+.tutorProfile img {
+	height: 2rem;
+}
+
+.tutorName {
+	position: relative;
+	font-size: 0.5rem;
+	top: 0;
+	left: 0;
+}
+
+.rating,
+.rating .studentCount,
+.rating .commentsCount {
+	display: flex;
+}
+
+.courseName {
+	width: 100%;
+	position: relative;
+	top: 1.5rem;
+	font-weight: 600;
+	padding-left: 1.5rem;
+}
+
+.courseRating {
+	position: relative;
+	width: 100%;
+	top: 3rem;
+	padding: 0 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.rating {
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rating div img {
+	margin-right: 0.5rem;
+}
+
+.btnBuy {
+	background-color: #25d181;
+	padding: 0.7rem 1rem;
+	border-radius: 4px;
+	color: white;
+}
+
+/* section D */
+
+.sectionD {
+	height: 35rem;
+	background: url("images/bg3.svg") no-repeat;
+	background-size: 100% 100%;
+	/* background-color: gold; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 8rem;
+	/* justify-content: center; */
+}
+
+.sectionD .headertext {
+	width: 25rem;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 700;
+}
+
+.sectionD .text {
+	width: 20rem;
+	font-size: 0.7rem;
+	text-align: center;
+	margin: 1rem 0 2rem;
+}
+
+.btnSignUp {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	font-size: 0.8rem;
+	padding: 0.5rem 1rem;
+}
+
+.btnSignUp img {
+	padding-left: 1rem;
+	height: 0.8rem;
+}
+
+.purpleDiv {
+	background-color: #7600de;
+	width: 60%;
+	padding: 3rem 3rem 4rem 5rem;
+	border-radius: 0 0 7rem 0;
+	color: white;
+}
+
+.headerWorkshop {
+	padding: 1rem 2rem 2rem;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.workshop {
+	display: flex;
+	padding: 1.5rem 2rem;
+	border-radius: 6px;
+}
+
+.workshop:nth-child(even) {
+	background-color: #ffffff1c;
+}
+
+.date {
+	padding-top: 0.5rem;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.3rem;
+	text-align: center;
+}
+
+.month {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.workshopDetails {
+	padding: 0 3rem 0 1rem;
+	font-size: 0.8rem;
+}
+
+.workshopName {
+	font-weight: 600;
+	padding-bottom: 0.2rem;
+}
+
+.workshopText {
+	font-size: 0.8rem;
+	color: #d1d1d1;
+}
+.sectionF {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+	height: 30rem;
+	padding: 5rem;
+	text-align: center;
+	/* background-color: whitesmoke; */
+}
+
+.sectionF .header {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.quotesContainer {
+	margin-top: 1rem;
+}
+
+.quotesContainer img {
+	height: 3rem;
+}
+
+.sayings {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.saying {
+	position: absolute;
+	top: 0;
+	width: 80%;
+	max-width: 50rem;
+	transition: opacity 0.3s ease-in-out;
+}
+
+/* .active {
+  visibility: visible;
+} */
+
+.saidText {
+	padding-bottom: 1rem;
+}
+
+.person .name {
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.person .designation {
+	font-size: 0.7rem;
+}
+
+.tracks {
+	display: flex;
+}
+
+.track {
+	height: 3px;
+	width: 10px;
+	background-color: #a1a1a1;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.activeTrack {
+	background-color: #7600de;
+}
+
+.sectionG {
+	padding: 5rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subscribeNow,
+.emailContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.subscribeNow {
+	flex-direction: column;
+}
+
+.subscribeNow .heading {
+	font-size: 3rem;
+}
+
+.subscribeNow .subscribeText {
+	font-size: 0.8rem;
+}
+
+.emailContainer {
+	position: relative;
+	margin-top: 2rem;
+	width: fit-content;
+}
+
+.emailSvg {
+	position: absolute;
+	left: 0;
+	height: 1rem;
+}
+
+.email {
+	border-bottom: 1px solid #7600de38;
+	padding: 0.5rem 5rem 0.5rem 1.5rem;
+}
+
+.emailArrow {
+	position: absolute;
+	height: 1.5rem;
+	right: 0;
+	cursor: pointer;
+}
+
+.externalLinks {
+	display: flex;
+}
+
+.linksContainer2 {
+	margin: 3rem;
+}
+
+.linksContainer2 .linkHead {
+	font-size: 1.1rem;
+	font-weight: 600;
+	padding: 1rem;
+}
+
+.linksContainer2 .link2 {
+	font-size: 0.8rem;
+	cursor: pointer;
+	padding: 1rem;
+}
+
+.sectionH .purpleContainer {
+	background-color: #7600de;
+	height: 20rem;
+	width: 95%;
+	float: right;
+	display: flex;
+	align-items: center;
+	border-radius: 5rem 0 0 0;
+	overflow: hidden;
+	color: white;
+}
+
+.instructorIllustration {
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	padding-left: 10rem;
+}
+
+.instructorIllustration img,
+.illustrationBoard img {
+	height: 15rem;
+}
+
+.instructorInviteForm {
+	height: 9rem;
+	/* background-color: lemonchiffon; */
+}
+
+.instructorInviteForm .heading {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.instructorInviteForm .joinMsg {
+	color: #cfcfcf;
+	position: relative;
+	font-size: 0.8rem;
+	left: -3rem;
+}
+
+.btnRegisterContainer {
+	position: relative;
+	left: 1rem;
+	height: 5rem;
+	width: 15rem;
+	/* background-color: turquoise; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem;
+}
+
+.btnRegister {
+	padding: 0.5rem 3rem 0.5rem 1rem;
+	background: transparent;
+	border: 1px solid #ffffff;
+	border-radius: 4px;
+	color: white;
+}
+
+.btnArrow {
+	position: absolute;
+	height: 1rem;
+	right: 4rem;
+	cursor: pointer;
+}
